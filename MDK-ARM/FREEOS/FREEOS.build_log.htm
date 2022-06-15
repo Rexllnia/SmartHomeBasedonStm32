@@ -1,0 +1,356 @@
+<html>
+<body>
+<pre>
+<h1>�Vision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ��Vision V5.29.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: ֣ �, HP Inc., LIC=FYKYW-QTIFH-QDSKD-83HKY-PW1ZY-NP2VN
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.29.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.29.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
+Dialog DLL:      TCM.DLL V1.36.5.0
+ 
+<h2>Project:</h2>
+D:\Keil_v5\keil_project\FREEOS1.07\MDK-ARM\FREEOS.uvprojx
+Project File Date:  03/28/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'FREEOS'
+compiling Font_ASCII.c...
+assembling startup_stm32f103xb.s...
+compiling spi.c...
+compiling dma.c...
+compiling iwdg.c...
+compiling tim.c...
+compiling adc.c...
+compiling Matrix_keyboard.c...
+..\USER\Inc\Matrix_keyboard.h(11): warning:  #1295-D: Deprecated declaration checkkey - give arg types
+  int checkkey();
+..\USER\Inc\Matrix_keyboard.h(12): warning:  #1295-D: Deprecated declaration keyscan - give arg types
+  int keyscan();
+..\USER\Inc\Matrix_keyboard.h(13): warning:  #1295-D: Deprecated declaration test - give arg types
+  void test();
+..\USER\Src\Matrix_keyboard.c(19): warning:  #223-D: function "osDelay" declared implicitly
+  		osDelay(50);   //检查按�?
+..\USER\Src\Matrix_keyboard.c: 4 warnings, 0 errors
+compiling stm32f1xx_hal_timebase_tim.c...
+compiling i2c.c...
+compiling stm32f1xx_hal_msp.c...
+compiling gpio.c...
+compiling ssd1306.c...
+..\USER\Src\ssd1306.c(357): warning:  #1-D: last line of file ends without a newline
+  }
+..\USER\Src\ssd1306.c: 1 warning, 0 errors
+compiling usart.c...
+compiling stm32f1xx_it.c...
+..\USER\Inc\ds18b20.h(22): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\USER\Inc\Matrix_keyboard.h(11): warning:  #1295-D: Deprecated declaration checkkey - give arg types
+  int checkkey();
+..\USER\Inc\Matrix_keyboard.h(12): warning:  #1295-D: Deprecated declaration keyscan - give arg types
+  int keyscan();
+..\USER\Inc\Matrix_keyboard.h(13): warning:  #1295-D: Deprecated declaration test - give arg types
+  void test();
+../Core/Src/stm32f1xx_it.c: 4 warnings, 0 errors
+compiling main.c...
+compiling freertos.c...
+..\USER\Inc\Matrix_keyboard.h(11): warning:  #1295-D: Deprecated declaration checkkey - give arg types
+  int checkkey();
+..\USER\Inc\Matrix_keyboard.h(12): warning:  #1295-D: Deprecated declaration keyscan - give arg types
+  int keyscan();
+..\USER\Inc\Matrix_keyboard.h(13): warning:  #1295-D: Deprecated declaration test - give arg types
+  void test();
+..\USER\Inc\ds1302.h(24): warning:  #1295-D: Deprecated declaration ds1302_gpio_init - give arg types
+  void ds1302_gpio_init();//ds1302端口初始�?
+..\USER\Inc\ds1302.h(28): warning:  #1295-D: Deprecated declaration ds1032_init - give arg types
+  void ds1032_init();//ds1302初始化函�?
+..\USER\Inc\ds1302.h(29): warning:  #1295-D: Deprecated declaration ds1032_DATAOUT_init - give arg types
+  void ds1032_DATAOUT_init();//IO端口配置为输�?
+..\USER\Inc\ds1302.h(30): warning:  #1295-D: Deprecated declaration ds1032_DATAINPUT_init - give arg types
+  void ds1032_DATAINPUT_init();//IO端口配置为输�?
+..\USER\Inc\ds1302.h(31): warning:  #1295-D: Deprecated declaration ds1032_read_time - give arg types
+  void ds1032_read_time();//从ds1302读取实时时间（BCD码）
+..\USER\Inc\ds1302.h(32): warning:  #1295-D: Deprecated declaration ds1032_read_realTime - give arg types
+  void ds1032_read_realTime();//将BCD码转化为十进制数�?
+..\USER\Inc\module_option.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\USER\Inc\filedir.h(3): warning:  #1295-D: Deprecated declaration filedir - give arg types
+  void filedir();
+..\USER\Inc\filedir.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+../Core/Src/freertos.c(346): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  			OLED_ShowString(10,6,oled_buf);
+../Core/Src/freertos.c(353): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  		OLED_ShowString(84,0,oled_buf);
+../Core/Src/freertos.c(359): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  		OLED_ShowString(84,2,oled_buf);
+../Core/Src/freertos.c(425): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  							OLED_ShowString(0,++j,p);
+../Core/Src/freertos.c(306): warning:  #177-D: variable "ssid"  was declared but never referenced
+  	char *ssid;
+../Core/Src/freertos.c(307): warning:  #177-D: variable "passwd"  was declared but never referenced
+  	char *passwd;
+../Core/Src/freertos.c(308): warning:  #177-D: variable "k"  was declared but never referenced
+  	char j=0,k=0;
+../Core/Src/freertos.c(309): warning:  #177-D: variable "blueteethEvent"  was declared but never referenced
+  	osEvent keyEvent,blueteethEvent,UART3Event;
+../Core/Src/freertos.c(492): warning:  #174-D: expression has no effect
+  			for(cmp;cmp>0;cmp-=3)
+../Core/Src/freertos.c(599): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  			HAL_UART_Transmit_DMA(&huart3, USART_buf, strlen((char*)USART_buf));
+../Core/Src/freertos.c(602): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  			HAL_UART_Transmit_DMA(&huart3, USART_buf, strlen((char*)USART_buf));
+../Core/Src/freertos.c(617): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  		HAL_UART_Transmit_DMA(&huart3, USART_buf, strlen((char*)USART_buf));
+../Core/Src/freertos.c(577): warning:  #177-D: variable "dht11buf"  was declared but never referenced
+  	char *dht11buf;
+../Core/Src/freertos.c(578): warning:  #177-D: variable "wifi_statueEvent"  was declared but never referenced
+  	osEvent UartEvent,ADCEvent,wifi_statueEvent;
+../Core/Src/freertos.c(579): warning:  #177-D: variable "len_buf"  was declared but never referenced
+  	char len_buf[25];
+../Core/Src/freertos.c(678): warning:  #177-D: variable "buf"  was declared but never referenced
+  	uint8_t buf[25];
+../Core/Src/freertos.c: 28 warnings, 0 errors
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling stm32f1xx_hal_adc_ex.c...
+compiling dht11.c...
+compiling filedir.c...
+..\USER\Inc\filedir.h(3): warning:  #1295-D: Deprecated declaration filedir - give arg types
+  void filedir();
+..\USER\Inc\filedir.h(15): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\USER\Src\filedir.c(14): warning:  #223-D: function "SD_init" declared implicitly
+    SD_init();
+..\USER\Src\filedir.c(18): warning:  #223-D: function "UART1_printf" declared implicitly
+  		UART1_printf("error!\r\n");
+..\USER\Src\filedir.c(20): warning:  #223-D: function "UART1_printf" declared implicitly
+  		UART1_printf("success,%d\r\n",SD_GetSectorCount());
+..\USER\Src\filedir.c(20): warning:  #223-D: function "SD_GetSectorCount" declared implicitly
+  		UART1_printf("success,%d\r\n",SD_GetSectorCount());
+..\USER\Src\filedir.c(28): warning:  #223-D: function "UART1_printf" declared implicitly
+  	UART1_printf("%s\n",ReadBuffer);     //??????
+..\USER\Src\filedir.c(29): warning:  #1-D: last line of file ends without a newline
+  }
+..\USER\Src\filedir.c(8): warning:  #177-D: variable "Bw"  was declared but never referenced
+  	UINT Br,Bw;
+..\USER\Src\filedir.c(9): warning:  #177-D: variable "path"  was declared but never referenced
+  	char path[4]="0:";
+..\USER\Src\filedir.c(10): warning:  #177-D: variable "testBuffer"  was declared but never referenced
+  	uint8_t testBuffer[]="SD��д����Ӣ�Ĳ���,SD card Chinese and English reading and writing test!! \r\n";
+..\USER\Src\filedir.c(12): warning:  #177-D: variable "success"  was declared but never referenced
+  	char success[]="����д�� Ok!\r\n";
+..\USER\Src\filedir.c(13): warning:  #177-D: variable "open"  was declared but never referenced
+  	char open[]="�ļ��Ѵ�! \r\n";
+..\USER\Src\filedir.c: 13 warnings, 0 errors
+compiling module_option.c...
+..\USER\Inc\module_option.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\USER\Src\module_option.c(7): warning:  #223-D: function "OLED_Fill" declared implicitly
+  		OLED_Fill(0x00);
+..\USER\Src\module_option.c(12): warning:  #223-D: function "OLED_ShowString" declared implicitly
+  		OLED_ShowString(50,1,"module_time");
+..\USER\Src\module_option.c(17): warning:  #223-D: function "sprintf" declared implicitly
+  		sprintf(oled_buf,"%d",cursor);
+..\USER\Src\module_option.c(111): warning:  #223-D: function "strcpy" declared implicitly
+  				strcpy(enter, "");
+..\USER\Src\module_option.c(143): warning:  #223-D: function "module_clock" declared implicitly
+  					case 1:module_clock();
+..\USER\Src\module_option.c(145): warning:  #223-D: function "filedir" declared implicitly
+  					case 2: filedir();
+..\USER\Src\module_option.c(160): warning:  #223-D: function "strcpy" declared implicitly
+  					strcpy(enter, "");
+..\USER\Src\module_option.c(164): warning:  #223-D: function "OLED_Refresh" declared implicitly
+  			OLED_Refresh();
+..\USER\Src\module_option.c(167): warning:  #1-D: last line of file ends without a newline
+  }
+..\USER\Src\module_option.c: 10 warnings, 0 errors
+compiling module_wifi.c...
+..\USER\Inc\ds1302.h(24): warning:  #1295-D: Deprecated declaration ds1302_gpio_init - give arg types
+  void ds1302_gpio_init();//ds1302端口初始�?
+..\USER\Inc\ds1302.h(28): warning:  #1295-D: Deprecated declaration ds1032_init - give arg types
+  void ds1032_init();//ds1302初始化函�?
+..\USER\Inc\ds1302.h(29): warning:  #1295-D: Deprecated declaration ds1032_DATAOUT_init - give arg types
+  void ds1032_DATAOUT_init();//IO端口配置为输�?
+..\USER\Inc\ds1302.h(30): warning:  #1295-D: Deprecated declaration ds1032_DATAINPUT_init - give arg types
+  void ds1032_DATAINPUT_init();//IO端口配置为输�?
+..\USER\Inc\ds1302.h(31): warning:  #1295-D: Deprecated declaration ds1032_read_time - give arg types
+  void ds1032_read_time();//从ds1302读取实时时间（BCD码）
+..\USER\Inc\ds1302.h(32): warning:  #1295-D: Deprecated declaration ds1032_read_realTime - give arg types
+  void ds1032_read_realTime();//将BCD码转化为十进制数�?
+..\USER\Src\module_wifi.c(52): warning:  #177-D: variable "buf"  was declared but never referenced
+  	char buf[255],enter[32];
+..\USER\Src\module_wifi.c(52): warning:  #177-D: variable "enter"  was declared but never referenced
+  	char buf[255],enter[32];
+..\USER\Src\module_wifi.c(53): warning:  #177-D: variable "i"  was declared but never referenced
+  	int i=1,temp=0;
+..\USER\Src\module_wifi.c(53): warning:  #177-D: variable "temp"  was declared but never referenced
+  	int i=1,temp=0;
+..\USER\Src\module_wifi.c(54): warning:  #177-D: variable "data"  was declared but never referenced
+  	uint8_t data[30]={"\n I have received:OK"};
+..\USER\Src\module_wifi.c(55): warning:  #177-D: variable "map"  was declared but never referenced
+  	char *map;
+..\USER\Src\module_wifi.c(56): warning:  #177-D: variable "key"  was declared but never referenced
+    char key[25];
+..\USER\Src\module_wifi.c(57): warning:  #177-D: variable "value"  was declared but never referenced
+  	char value[4];
+..\USER\Src\module_wifi.c(252): warning:  #1-D: last line of file ends without a newline
+  }
+..\USER\Src\module_wifi.c: 15 warnings, 0 errors
+compiling user_diskio.c...
+../FATFS/Target/user_diskio.c(91): warning:  #223-D: function "SPI_setspeed" declared implicitly
+  				SPI_setspeed(SPI_BAUDRATEPRESCALER_256);
+../FATFS/Target/user_diskio.c(92): warning:  #223-D: function "spi_readwrite" declared implicitly
+  				spi_readwrite(0xff);//�ṩ�����8��ʱ��
+../FATFS/Target/user_diskio.c(220): warning:  #223-D: function "spi_readwrite" declared implicitly
+  						}while(spi_readwrite(0xFF)!=0xFF);
+../FATFS/Target/user_diskio.c: 3 warnings, 0 errors
+compiling stm32f1xx_hal.c...
+compiling fatfs.c...
+compiling ds1302.c...
+..\USER\Inc\ds1302.h(24): warning:  #1295-D: Deprecated declaration ds1302_gpio_init - give arg types
+  void ds1302_gpio_init();//ds1302端口初始�?
+..\USER\Inc\ds1302.h(28): warning:  #1295-D: Deprecated declaration ds1032_init - give arg types
+  void ds1032_init();//ds1302初始化函�?
+..\USER\Inc\ds1302.h(29): warning:  #1295-D: Deprecated declaration ds1032_DATAOUT_init - give arg types
+  void ds1032_DATAOUT_init();//IO端口配置为输�?
+..\USER\Inc\ds1302.h(30): warning:  #1295-D: Deprecated declaration ds1032_DATAINPUT_init - give arg types
+  void ds1032_DATAINPUT_init();//IO端口配置为输�?
+..\USER\Inc\ds1302.h(31): warning:  #1295-D: Deprecated declaration ds1032_read_time - give arg types
+  void ds1032_read_time();//从ds1302读取实时时间（BCD码）
+..\USER\Inc\ds1302.h(32): warning:  #1295-D: Deprecated declaration ds1032_read_realTime - give arg types
+  void ds1032_read_realTime();//将BCD码转化为十进制数�?
+..\USER\Src\ds1302.c: 6 warnings, 0 errors
+compiling stm32f1xx_hal_adc.c...
+compiling module_clock.c...
+..\USER\Inc\module_clock.h(8): warning:  #1295-D: Deprecated declaration module_clock - give arg types
+  void module_clock();
+..\USER\Inc\module_clock.h(9): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\USER\Inc\ds1302.h(24): warning:  #1295-D: Deprecated declaration ds1302_gpio_init - give arg types
+  void ds1302_gpio_init();//ds1302端口初始�?
+..\USER\Inc\ds1302.h(28): warning:  #1295-D: Deprecated declaration ds1032_init - give arg types
+  void ds1032_init();//ds1302初始化函�?
+..\USER\Inc\ds1302.h(29): warning:  #1295-D: Deprecated declaration ds1032_DATAOUT_init - give arg types
+  void ds1032_DATAOUT_init();//IO端口配置为输�?
+..\USER\Inc\ds1302.h(30): warning:  #1295-D: Deprecated declaration ds1032_DATAINPUT_init - give arg types
+  void ds1032_DATAINPUT_init();//IO端口配置为输�?
+..\USER\Inc\ds1302.h(31): warning:  #1295-D: Deprecated declaration ds1032_read_time - give arg types
+  void ds1032_read_time();//从ds1302读取实时时间（BCD码）
+..\USER\Inc\ds1302.h(32): warning:  #1295-D: Deprecated declaration ds1032_read_realTime - give arg types
+  void ds1032_read_realTime();//将BCD码转化为十进制数�?
+..\USER\Src\module_clock.c(29): warning:  #223-D: function "sprintf" declared implicitly
+  			sprintf(oled_buf,"%d",timeEvent.value.v);
+..\USER\Src\module_clock.c(34): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  			OLED_ShowString(50,1,oled_buf);
+..\USER\Src\module_clock.c(37): warning:  #223-D: function "sprintf" declared implicitly
+  		sprintf(oled_buf,"%d",TimeData.minute);
+..\USER\Src\module_clock.c(38): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  		OLED_ShowString(50,2,oled_buf);
+..\USER\Src\module_clock.c(45): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  		OLED_ShowString(50,3,oled_buf);
+..\USER\Src\module_clock.c(49): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  		OLED_ShowString(50,4,oled_buf);
+..\USER\Src\module_clock.c(53): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  		OLED_ShowString(50,5,oled_buf);
+..\USER\Src\module_clock.c(56): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  		OLED_ShowString(50,6,oled_buf);
+..\USER\Src\module_clock.c(64): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  				OLED_ShowString(10,0,enter);
+..\USER\Src\module_clock.c(72): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  				OLED_ShowString(10,0,enter);
+..\USER\Src\module_clock.c(79): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  				OLED_ShowString(10,0,enter);
+..\USER\Src\module_clock.c(86): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  				OLED_ShowString(10,0,enter);
+..\USER\Src\module_clock.c(93): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  				OLED_ShowString(10,0,enter);
+..\USER\Src\module_clock.c(100): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  				OLED_ShowString(10,0,enter);
+..\USER\Src\module_clock.c(107): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  				OLED_ShowString(10,0,enter);
+..\USER\Src\module_clock.c(114): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  				OLED_ShowString(10,0,enter);
+..\USER\Src\module_clock.c(121): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  				OLED_ShowString(10,0,enter);
+..\USER\Src\module_clock.c(128): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  				OLED_ShowString(10,0,enter);
+..\USER\Src\module_clock.c(208): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+  				OLED_ShowString(10,0,enter);
+..\USER\Src\module_clock.c(227): warning:  #1-D: last line of file ends without a newline
+  }
+..\USER\Src\module_clock.c: 28 warnings, 0 errors
+compiling SDdriver.c...
+..\USER\Src\SDdriver.c(59): warning:  #223-D: function "UART1_printf" declared implicitly
+  	UART1_printf("%d",r1);
+..\USER\Src\SDdriver.c: 1 warning, 0 errors
+compiling stm32f1xx_hal_rcc.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_dma.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal_flash_ex.c...
+compiling stm32f1xx_hal_flash.c...
+compiling stm32f1xx_hal_iwdg.c...
+compiling system_stm32f1xx.c...
+compiling diskio.c...
+compiling stm32f1xx_hal_exti.c...
+compiling croutine.c...
+compiling event_groups.c...
+compiling stm32f1xx_hal_spi.c...
+compiling list.c...
+compiling stm32f1xx_hal_uart.c...
+compiling stm32f1xx_hal_tim_ex.c...
+compiling stream_buffer.c...
+compiling queue.c...
+compiling timers.c...
+compiling heap_4.c...
+compiling port.c...
+compiling tasks.c...
+compiling cmsis_os.c...
+compiling stm32f1xx_hal_i2c.c...
+compiling stm32f1xx_hal_tim.c...
+compiling ff_gen_drv.c...
+compiling syscall.c...
+compiling ff.c...
+linking...
+Program Size: Code=37192 RO-data=1784 RW-data=312 ZI-data=12328  
+FromELF: creating hex file...
+"FREEOS\FREEOS.axf" - 0 Error(s), 113 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.6.0.pack
+                ARM.CMSIS.5.6.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.3.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.0.pack
+                Keil.STM32F1xx_DFP.2.4.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_FREEOS
+  C:\Users\֣�\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include
+  C:\Users\֣�\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.3.0
+Build Time Elapsed:  00:00:09
+</pre>
+</body>
+</html>
